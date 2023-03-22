@@ -3,6 +3,7 @@ let searchBtn = $("#searchBtn");
 
 function handleFormSubmit(event) {
   event.preventDefault();
+
   let birdName = $("#birdSearch").val();
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
@@ -16,20 +17,25 @@ function handleFormSubmit(event) {
       return response.json();
     })
     .then(function (data) {
+      console.log(data);
       let species = data.numSpecies;
-
       if (species > 1) {
-        console.log("Be more specific");
+        alert("Be more specific");
       } else if (species == 0) {
-        console.log("No results matches your Search");
+        alert("No results matches your Search");
       } else {
         console.log("Working");
       }
-      console.log(data);
+      if (data.numSpecies == 1 && data.numPages == 1) {
+        loadSecondPage();
+      }
     });
 }
 
-// searchForm.on("submit", handleFormSubmit);
+//Created Function to load new page once search values matches our working conditions
+let loadSecondPage = function () {
+  window.location.href = "secondindex.html";
+};
 
 searchBtn.on("click", handleFormSubmit);
 
