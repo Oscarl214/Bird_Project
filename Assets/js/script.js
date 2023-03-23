@@ -1,7 +1,7 @@
 let searchForm = $("#userForm");
 let searchBtn = $("#searchBtn");
 
-function handleFormSubmit(event) {
+function fetchBirdAPI(event) {
   event.preventDefault();
 
   let birdName = $("#birdSearch").val();
@@ -26,6 +26,9 @@ function handleFormSubmit(event) {
       } else {
         console.log("Working");
       }
+      //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
+      localStorage.setItem("birdData", JSON.stringify(data));
+
       if (data.numSpecies == 1 && data.numPages == 1) {
         loadSecondPage();
       }
@@ -34,10 +37,10 @@ function handleFormSubmit(event) {
 
 //Created Function to load new page once search values matches our working conditions
 let loadSecondPage = function () {
-  window.location.href = "secondindex.html";
+  window.location.href = "./Assets/secondindex.html";
 };
 
-searchBtn.on("click", handleFormSubmit);
+searchBtn.on("click", fetchBirdAPI);
 
 //TODO on JS:
 

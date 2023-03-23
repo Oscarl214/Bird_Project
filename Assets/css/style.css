@@ -8,3 +8,7 @@ html {
     #12eb37
   );
 }
+
+ul {
+  list-style-type: circle;
+}
