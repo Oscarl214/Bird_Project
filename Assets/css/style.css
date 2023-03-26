@@ -1,14 +1,55 @@
-html {
-  background-image: linear-gradient(
-    to right top,
-    #bdd44b,
-    #a9da3e,
-    #8ee035,
-    #68e532,
-    #12eb37
-  );
+.background {
+  /* background-image: linear-gradient( */
+    /* to right top, */
+    /* #bdd44b, */
+    /* #a9da3e, */
+    /* #338b01, */
+    /* #266602, */
+    /* #163d00); */
+    
+    /* background-image: url(/Assets/img/background_2.jpg); */
+    background-color: #ffffff;
+}
+#hero{
+background: url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+height: 600px;
+background-position-x: center;
+background-size: cover;
 }
 
-ul {
+#about-contact {
+ 
+background: url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+height: 600px;
+background-position-x: center;
+background-size: cover;
+}
+
+.mainPics {
+  min-height: 256px;
+  min-width: 256px;
+  max-height: 384px;
+  max-width: 384px;
+  border-radius: 25%;
+}
+
+
+h1, h2, a{
+  font-family: 'Alfa Slab One', cursive;
+
+}
+
+h3, h4 {
+  font-family: 'Roboto', sans-serif;;
+}
+ul { 
   list-style-type: circle;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
 }
