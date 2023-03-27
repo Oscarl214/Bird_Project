@@ -9,93 +9,91 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./css/secondpagestyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <title>Bird Project</title>
   </head>
   <body>
     <div class="background">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://openclipart.org/image/800px/299098" width="112" height="28">
-        </a>
-        
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-        
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            ABOUT THE PROJECT
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="./img/Logo-02.png" width="112" height="28">
           </a>
-        
-          <a class="navbar-item">
-            MEET THE TEAM
+          
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
         </div>
-        
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-danger">
-                <strong>GIT HUB</strong>
-              </a>
+          
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item has-text-black">
+              About The Project
+            </a>
+          
+            <a class="navbar-item has-text-black">
+              Meet The Team
+            </a>
+          </div>
+          
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-danger" href="https://github.com/Oscarl214/Bird_Project">
+                  <strong>GIT HUB</strong>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-<!-- Column 1 Image and Downloand Recording button -->
-    <div class="columns">
-      <div class="column">
-    <section class="section is-medium section is-centered">
-      <figure class="image is-128x128">
-        <img
-          id="fetchedPhoto"
-          class="is-rounded"
-          src="https://bulma.io/images/placeholders/128x128.png"
-        />
-      </figure>
-      <br />
-     
-     
-     
-    </section>
-  </div>
+      </nav>
   
-  <!-- Column 2 Bird facts & search respitory Button -->
-
-  <div class="column">
-    <section class="section is-small">
-      <h1 class="has-text-white has-text-weight-bold is-size-1" id="englishName">Bird Name</h1>
-      <h2 class="has-text-white has-text-weight-medium is-size-3">Fun Facts</h2>
-      <ul class="has-text-white">
-        <li>Scientific Name: <span id="scienceName"></span></li>
-        <li>Country recording took place: <span id="countryRec"></span></li>
-        <li>City recording took place: <span id="cityRec"></span></li>
-      </ul>
-      <section>
-      <a id="downBtn"
-      ><button class="is-warning button is-medium is-link">Download Recording</button></a>
-    </section>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-  </div>
-</div>
+      <!-- Column 1 Image and Downloand Recording button -->
+      <section class="section is-large">
+      <div class="columns">
+        <div class="column is-centered">
+          
+            <figure class="image is-128x128">
+              <img
+                id="fetchedPhoto"
+                class="is-rounded"
+                src="https://bulma.io/images/placeholders/128x128.png"
+              />
+            </figure>
+            <br/>
+            <div class="column is-centered">
+              <h1
+                class="has-text-white has-text-weight-bold is-size-1"
+                id="englishName"
+              >
+                Bird Name
+              </h1>
+              <h2 class="has-text-white has-text-weight-medium is-size-3" id="under">
+                Fun Facts
+              </h2>
+              <ul class="has-text-white">
+                <li>Scientific Name: <span id="scienceName"></span></li>
+                <li>
+                  Country recording took place: <span id="countryRec"></span>
+                </li>
+                <li>City recording took place: <span id="cityRec"></span></li>
+              </ul>
+              <br>
+                <a id="downBtn"
+                  ><button class="is-warning button is-medium is-link">
+                    Download Recording
+                  </button></a>
+        </div>
+        <div class="column" >
+        <div id="image2">
+          <img src="https://www.allaboutbirds.org/news/wp-content/uploads/2020/07/STanager-Shapiro-ML.jpg" id="fetchedPhoto2"/>
+        <!-- Column 2 Bird facts & search respitory Button -->
+        </div>
+        <img src="./img/tallgreass-removebg-preview.png" id="grass"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/secondpage.js"></script>
   </body>

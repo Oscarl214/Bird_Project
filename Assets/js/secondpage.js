@@ -4,6 +4,7 @@ let countryRec = $("#countryRec");
 let cityRec = $("#cityRec");
 let downlink = $("#downBtn");
 let imgHolder = $("#fetchedPhoto");
+let imgPlace = $("#fetchedPhoto2");
 $(document).ready(function () {
   // Retrieved stored data from local storage
   let birdData = JSON.parse(localStorage.getItem("birdData"));
@@ -28,6 +29,7 @@ $(document).ready(function () {
     .then((data) => {
       console.log(data);
       imgHolder.attr("src", data.photos[0].src.original);
+      imgPlace.attr("src", data.photos[1].src.large2x);
     });
 });
 
