@@ -18,6 +18,9 @@ jQuery, Bulma, Xeno-Canto API (https://xeno-canto.org/explore/api), Pexels API (
 ## Preview
 
 
+https://user-images.githubusercontent.com/104389845/228084794-7b558060-d879-484c-bb7d-4b340fb1a12d.mp4
+
+
 ## Deployed Link
 
 https://oscarl214.github.io/Bird_Project/
