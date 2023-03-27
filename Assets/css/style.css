@@ -53,3 +53,25 @@ ul {
 .footer {
   background-color: rgb(0, 0, 0);
 }
+.teamLinks {
+  color: white;
+}
+
+.teamRight {
+  justify-content: right;
+  align-items: right;
+  padding-left: 40%;
+}
+
+.aboutProject {
+  text-align: center;
+}
+
+.popSearch {
+  font-size: 4rem;
+}
+
+.popStyle {
+  font-size: 2rem;
+  color: forestgreen;
+}

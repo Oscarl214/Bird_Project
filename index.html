@@ -44,7 +44,9 @@
     <!-- NAV BAR with Git Hub link -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+
+        <a class="navbar-item" href="index.html">
+
           <img src="Assets\img\Logo-02.png" width="112" height="28">
         </a>
         
@@ -133,42 +135,48 @@
     <!-- </section> -->
 
     <!-- POPULAR SEARCHES SECTION -->
-    <section class="section" id="popular-searches">
+    <!-- <section class="section" id="popular-searches">
       <div class="container">
         
          
-            <section class="section is-small">
-              <h1 class="title has-text-black" id="">Popular Searches</h1>
+            <section class="section is-small"> -->
+              <h1 class="title has-text-black popSearch">Popular Searches</h1>
 
-              <section class="section is-small level is-justify-content-space-evenly">
+              <section class="section is-small level is-justify-content-space-evenly has-text-centered">
                 <figure>
                   <a id="parrotButton">
                   <img
                     class="is-rounded mainPics"
                     src="https://images.pexels.com/photos/1599533/pexels-photo-1599533.jpeg"
                     
-                  /><h2>Grey Parrot</h2></a>
+
+                  /><h2 class="popStyle">Grey Parrot</h2></a>
+
                 </figure>
                 <figure>
                   <a id="baldEagleButton">
                     <img
                       class="is-rounded mainPics"
                       src="https://upload.wikimedia.org/wikipedia/commons/1/1a/About_to_Launch_%2826075320352%29.jpg"
-                    /><h2>Bald Eagle</h2></a>
+
+                    /><h2 class="popStyle">Bald Eagle</h2></a>
+
                 </figure>
                 <figure>
                   <a id="blueJayButton">
                     <img
                       class="is-rounded mainPics"
                       src="https://nas-national-prod.s3.amazonaws.com/styles/api_hero_bird_with_crop_1920_1200/public/birds/hero_image/sfw_fixed_01-29-2011-223.jpg?tok=1671176071"
-                    /><h2>Blue Jay</h2></a>
+                    /><h2 class="popStyle">Blue Jay</h2></a>
+
                 </figure>
                 <figure>
                   <a id="andeanCondorButton">
                     <img
                       class="is-rounded mainPics"
                       src="https://i.guim.co.uk/img/media/6b021b9f22ab0507dfcbc8617d39cad72287a712/0_70_5000_3000/master/5000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=18d8320c286d5c5c14d2027393ef123a"
-                    /><h2>Andean Condor</h2></a>
+                    /><h2 class="popStyle">Andean Condor</h2></a>
+
                 </figure>
               </section>
             </section>
@@ -184,20 +192,20 @@
 
         <div class="columns">
             <div class="column">
-                <h2 class="title has-text-white">About This Project</h2>
+                <h2 class="title has-text-white aboutProject">About This Project</h2>
                 <h3 class="subtitle has-text-white">
                   UT Austin Project 1 is a Bird facts and sounds repository finder. A user can look up a bird by name and then have facts and a recorded sound of that specific bird. 
                   We used (2) web API's to create this and Bulma CSS to create this repository site. 
                 </h3>
             </div>
-            <div class="column">         
+            <div class="column teamRight">         
       <h2 class="title has-text-white">Meet The Team</h2>
       <h3 class="subtitle has-text-white">
         <ul>
-          <li>Michael Formico</li>
-          <li>Oscar Leah</li>
-          <li>Noah Taylor</li>
-          <li>Whitney White</li>
+          <li><a class= "teamLinks" href="https://github.com/MichaelFormico">Michael Formico</a></li>
+          <li><a class= "teamLinks" href="https://github.com/Oscarl214">Oscar Leah</a></li>
+          <li><a class= "teamLinks" href="https://github.com/noahbtaylor">Noah Taylor</a></li>
+          <li><a class= "teamLinks" href="https://github.com/Whitney15">Whitney White</a></li>
         </ul>
         
       </h3>
@@ -214,6 +222,16 @@
             <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+          <p>
+            <strong>Xeno-Canto</strong> The API data for the bird sounds is from
+            <a href="http://xeno-canto.org/explore/api">Xeno-Canto</a>. The bird data content
+            is from <a href="http://xeno-canto.org">Xeno-Canto's Main Website</a>.
+          </p>
+          <p>
+            <strong>Pexels API</strong> The API data for the bird pictures is from
+            <a href="http://pexels.com/api">Pexels</a>. The bird photo data content
+            is from <a href="http://pexels.com">Pexels</a>.
           </p>
         </div>
       </footer>
