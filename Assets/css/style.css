@@ -69,9 +69,14 @@ ul {
 
 .popSearch {
   font-size: 4rem;
+  margin-left: 2%;
 }
 
 .popStyle {
   font-size: 2rem;
   color: forestgreen;
+}
+
+.aboutSection {
+  margin-left: 7.5%;
 }
