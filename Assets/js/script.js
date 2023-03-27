@@ -39,8 +39,6 @@ function fetchBirdAPI(event) {
     });
 }
 
-
-
 function fetchBirdAPI(event) {
   event.preventDefault();
 
@@ -74,7 +72,6 @@ function fetchBirdAPI(event) {
       }
     });
 }
-
 
 function fetchParrotAPI(event) {
   event.preventDefault();
@@ -212,33 +209,16 @@ function fetchandeanCondorAPI(event) {
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Created Function to load new page once search values matches our working conditions
 let loadSecondPage = function () {
-  window.location.href = "./Assets/secondindex.html";
+  window.location.href = "secondindex.html";
 };
 
 searchBtn.on("click", fetchBirdAPI);
-parrotBtn.on("click", fetchParrotAPI)
-baldEagleBtn.on("click", fetchBaldEagleAPI)
-blueJayBtn.on("click", fetchblueJayAPI)
-andeanCondorBtn.on("click", fetchandeanCondorAPI)
+parrotBtn.on("click", fetchParrotAPI);
+baldEagleBtn.on("click", fetchBaldEagleAPI);
+blueJayBtn.on("click", fetchblueJayAPI);
+andeanCondorBtn.on("click", fetchandeanCondorAPI);
 
 //TODO on JS:
 
