@@ -1,22 +1,70 @@
 html {
   /* background-image: linear-gradient( */
-    /* to right top, */
-    /* #bdd44b, */
-    /* #a9da3e, */
-    /* #8ee035, */
-    /* #68e532, */
-    /* #12eb37 */
+  /* to right top, */
+  /* #bdd44b, */
+  /* #a9da3e, */
+  /* #8ee035, */
+  /* #68e532, */
+  /* #12eb37 */
   /* ); */
 }
 
 span {
-  font-weight: bold;
+  font-weight: medium;
 }
 
-.background{
+.background {
   background: url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-  height: 800px;
+  height: auto;
   background-position-x: center;
   background-size: cover;
-  }
-  
+}
+
+#image2 {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+.has-text-white {
+  line-height: 4rem;
+  font-size: 3rem;
+}
+
+#under {
+  text-decoration: underline;
+}
+
+#englishName {
+  text-decoration: underline;
+}
+
+#grass {
+  position: fixed;
+  bottom: -70px;
+  width: 2000px;
+  right: 2rem;
+  height: auto;
+}
+
+h1,
+h2,
+a {
+  font-family: "Alfa Slab One", cursive;
+}
+
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style-type: circle;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+}
