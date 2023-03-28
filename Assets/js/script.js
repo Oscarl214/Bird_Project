@@ -56,9 +56,11 @@ function fetchBirdAPI(event) {
     .then(function (data) {
       let species = data.numSpecies;
       if (species > 1) {
-        alert("Be more specific");
+        $(".modal").attr("class", "modal is-active");
+        $("#mText").text("Be more Specific!");
       } else if (species == 0) {
-        alert("No results matches your Search");
+        $(".modal").attr("class", "modal is-active");
+        $("#mText").text("No results found!");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -264,6 +266,10 @@ blueJayBtn.on("click", fetchblueJayAPI);
 andeanCondorBtn.on("click", fetchandeanCondorAPI);
 chileanFlamingoBtn.on("click", fetchchileanFlamingoAPI);
 indianPeafowlBtn.on("click", fetchindianPeafowlAPI);
+$("#closeM").on("click", function () {
+  $(".modal").removeClass("is-active");
+});
+
 //TODO on JS:
 
 //1. Create Prompts for if statement
