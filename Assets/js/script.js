@@ -1,9 +1,11 @@
 let searchForm = $("#userForm");
 let searchBtn = $("#searchBtn");
-let parrotBtn = $("#parrotButton");
+let toucanBtn = $("#toucanButton");
 let baldEagleBtn = $("#baldEagleButton");
 let blueJayBtn = $("#blueJayButton");
 let andeanCondorBtn = $("#andeanCondorButton");
+let chileanFlamingoBtn = $("#chileanFlamingoButton");
+let indianPeafowlBtn = $("#indianPeafowlButton");
 
 function fetchBirdAPI(event) {
   event.preventDefault();
@@ -73,10 +75,10 @@ function fetchBirdAPI(event) {
     });
 }
 
-function fetchParrotAPI(event) {
+function fetchtoucanAPI(event) {
   event.preventDefault();
 
-  let birdName = "grey parrot";
+  let birdName = "Keel-billed toucan";
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
@@ -208,18 +210,84 @@ function fetchandeanCondorAPI(event) {
       }
     });
 }
+function fetchchileanFlamingoAPI(event) {
+  event.preventDefault();
 
+  let birdName = "chilean flamingo";
+
+  let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
+
+  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
+
+  fetch(birdApiUrl, {
+    cache: "reload",
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      let species = data.numSpecies;
+      if (species > 1) {
+        alert("Be more specific");
+      } else if (species == 0) {
+        alert("No results matches your Search");
+      } else {
+        console.log("Working");
+      }
+      //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
+      localStorage.setItem("birdData", JSON.stringify(data));
+
+      if (data.numSpecies == 1 && data.numPages == 1) {
+        loadSecondPage();
+      }
+    });
+}
+function fetchindianPeafowlAPI(event) {
+  event.preventDefault();
+
+  let birdName = "indian peafowl";
+
+  let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
+
+  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
+
+  fetch(birdApiUrl, {
+    cache: "reload",
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      let species = data.numSpecies;
+      if (species > 1) {
+        alert("Be more specific");
+      } else if (species == 0) {
+        alert("No results matches your Search");
+      } else {
+        console.log("Working");
+      }
+      //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
+      localStorage.setItem("birdData", JSON.stringify(data));
+
+      if (data.numSpecies == 1 && data.numPages == 1) {
+        loadSecondPage();
+      }
+    });
+}
 //Created Function to load new page once search values matches our working conditions
 let loadSecondPage = function () {
   window.location.href = "secondindex.html";
 };
 
 searchBtn.on("click", fetchBirdAPI);
-parrotBtn.on("click", fetchParrotAPI);
+toucanBtn.on("click", fetchtoucanAPI);
 baldEagleBtn.on("click", fetchBaldEagleAPI);
 blueJayBtn.on("click", fetchblueJayAPI);
 andeanCondorBtn.on("click", fetchandeanCondorAPI);
-
+chileanFlamingoBtn.on("click", fetchchileanFlamingoAPI);
+indianPeafowlBtn.on("click", fetchindianPeafowlAPI);
 //TODO on JS:
 
 //1. Create Prompts for if statement

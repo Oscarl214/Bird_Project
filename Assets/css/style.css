@@ -80,3 +80,12 @@ ul {
 .aboutSection {
   margin-left: 7.5%;
 }
+
+.card-title {
+  font-weight: bold;
+  color: forestgreen;
+}
+
+.btn-primary {
+  color: red;
+}
