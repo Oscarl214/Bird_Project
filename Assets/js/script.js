@@ -7,39 +7,36 @@ let andeanCondorBtn = $("#andeanCondorButton");
 let chileanFlamingoBtn = $("#chileanFlamingoButton");
 let indianPeafowlBtn = $("#indianPeafowlButton");
 
-function fetchBirdAPI(event) {
-  event.preventDefault();
+// function fetchBirdAPI(event) {
+//   event.preventDefault();
 
-  let birdName = $("#birdSearch").val();
+//   let birdName = $("#birdSearch").val();
 
-  let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
+//   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
+//   // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
 
-  fetch(birdApiUrl, {
-    cache: "reload",
-  })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      let species = data.numSpecies;
-      if (species > 1) {
-        alert("Be more specific");
-      } else if (species == 0) {
-        alert("No results matches your Search");
-      } else {
-        console.log("Working");
-      }
-      //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
-      localStorage.setItem("birdData", JSON.stringify(data));
+//   fetch(birdApiUrl, {
+//     cache: "reload",
+//   })
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       let species = data.numSpecies;
+//       if (species > 1) {
+//         alert("Be more specific");
+//       } else if (species == 0) {
+//         alert("No results matches your Search");
+//       }
+//       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
+//       localStorage.setItem("birdData", JSON.stringify(data));
 
-      if (data.numSpecies == 1 && data.numPages == 1) {
-        loadSecondPage();
-      }
-    });
-}
+//       if (data.numSpecies == 1 && data.numPages == 1) {
+//         loadSecondPage();
+//       }
+//     });
+// }
 
 function fetchBirdAPI(event) {
   event.preventDefault();
@@ -57,14 +54,11 @@ function fetchBirdAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -91,14 +85,11 @@ function fetchtoucanAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -125,14 +116,11 @@ function fetchBaldEagleAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -159,14 +147,11 @@ function fetchblueJayAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -193,14 +178,11 @@ function fetchandeanCondorAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -226,14 +208,11 @@ function fetchchileanFlamingoAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));
@@ -259,14 +238,11 @@ function fetchindianPeafowlAPI(event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       let species = data.numSpecies;
       if (species > 1) {
         alert("Be more specific");
       } else if (species == 0) {
         alert("No results matches your Search");
-      } else {
-        console.log("Working");
       }
       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
       localStorage.setItem("birdData", JSON.stringify(data));

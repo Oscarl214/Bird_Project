@@ -27,7 +27,6 @@ $(document).ready(function () {
       return resp.json();
     })
     .then((data) => {
-      console.log(data);
       imgHolder.attr("src", data.photos[0].src.original);
       imgPlace.attr("src", data.photos[1].src.large2x);
     });
