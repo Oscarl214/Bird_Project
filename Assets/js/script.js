@@ -1,3 +1,5 @@
+
+// Different variables to make buttons work on homepage
 let searchForm = $("#userForm");
 let searchBtn = $("#searchBtn");
 let toucanBtn = $("#toucanButton");
@@ -7,37 +9,7 @@ let andeanCondorBtn = $("#andeanCondorButton");
 let chileanFlamingoBtn = $("#chileanFlamingoButton");
 let indianPeafowlBtn = $("#indianPeafowlButton");
 
-// function fetchBirdAPI(event) {
-//   event.preventDefault();
-
-//   let birdName = $("#birdSearch").val();
-
-//   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
-
-//   // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
-
-//   fetch(birdApiUrl, {
-//     cache: "reload",
-//   })
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       let species = data.numSpecies;
-//       if (species > 1) {
-//         alert("Be more specific");
-//       } else if (species == 0) {
-//         alert("No results matches your Search");
-//       }
-//       //SET OUR FETCHED DATA TO OUR LOCAL STORAGE
-//       localStorage.setItem("birdData", JSON.stringify(data));
-
-//       if (data.numSpecies == 1 && data.numPages == 1) {
-//         loadSecondPage();
-//       }
-//     });
-// }
-
+// below are all the functions for the searchbar or clicking an image on homepage
 function fetchBirdAPI(event) {
   event.preventDefault();
 
@@ -45,7 +17,6 @@ function fetchBirdAPI(event) {
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
 
   fetch(birdApiUrl, {
     cache: "reload",
@@ -78,7 +49,6 @@ function fetchtoucanAPI(event) {
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
 
   fetch(birdApiUrl, {
     cache: "reload",
@@ -109,8 +79,6 @@ function fetchBaldEagleAPI(event) {
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
-
   fetch(birdApiUrl, {
     cache: "reload",
   })
@@ -139,8 +107,6 @@ function fetchblueJayAPI(event) {
   let birdName = "blue jay";
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
-
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
 
   fetch(birdApiUrl, {
     cache: "reload",
@@ -171,8 +137,6 @@ function fetchandeanCondorAPI(event) {
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
-
   fetch(birdApiUrl, {
     cache: "reload",
   })
@@ -200,8 +164,6 @@ function fetchchileanFlamingoAPI(event) {
   let birdName = "chilean flamingo";
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
-
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
 
   fetch(birdApiUrl, {
     cache: "reload",
@@ -231,8 +193,6 @@ function fetchindianPeafowlAPI(event) {
 
   let birdApiUrl = "https://xeno-canto.org/api/2/recordings?query=" + birdName;
 
-  // let attempt2 = "https://xeno-canto.org/api/2/recordings?query=grey+parrot";
-
   fetch(birdApiUrl, {
     cache: "reload",
   })
@@ -259,6 +219,7 @@ let loadSecondPage = function () {
   window.location.href = "secondindex.html";
 };
 
+// buttons to make the the API calls and generate second page
 searchBtn.on("click", fetchBirdAPI);
 toucanBtn.on("click", fetchtoucanAPI);
 baldEagleBtn.on("click", fetchBaldEagleAPI);
@@ -266,13 +227,9 @@ blueJayBtn.on("click", fetchblueJayAPI);
 andeanCondorBtn.on("click", fetchandeanCondorAPI);
 chileanFlamingoBtn.on("click", fetchchileanFlamingoAPI);
 indianPeafowlBtn.on("click", fetchindianPeafowlAPI);
+
+// modal function to return be more specific or no results found
 $("#closeM").on("click", function () {
   $(".modal").removeClass("is-active");
 });
 
-//TODO on JS:
-
-//1. Create Prompts for if statement
-//1.2. Either create it dynamically through js or create on out html and apply a "hidden" attribute and unhide as we need to
-//1.3. Pull data for what we need for "fun facts" and most importantly our recording, only pulling from first array of data fetch [0]
-//2. fetch our pictures from second API

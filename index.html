@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <!-- All the links for outside programs we used and attached our other pages -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,29 +19,6 @@
   </head>
   <body>
     <div class="background">
-  
-    <!-- <nav class="navbar" role="navigation" aria-label="main navigation"> -->
-      <!-- <div class="navbar-brand"> -->
-        <!-- <a class="navbar-item" href="https://bulma.io"> -->
-          <!-- <img -->
-            <!-- src="https://openclipart.org/image/800px/299098" -->
-            <!-- alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" -->
-            <!-- width="112" -->
-            <!-- height="28" -->
-          <!-- /> -->
-        <!-- </a> -->
-        <!-- <a -->
-          <!-- role="button" -->
-          <!-- class="navbar-burger" -->
-          <!-- aria-label="menu" -->
-          <!-- aria-expanded="false" -->
-        <!-- > -->
-          <!-- <span aria-hidden="true"></span> -->
-          <!-- <span aria-hidden="true"></span> -->
-          <!-- <span aria-hidden="true"></span> -->
-        <!-- </a> -->
-      <!-- </div> -->
-    <!-- </nav> -->
 
     <!-- NAV BAR with Git Hub link -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -80,7 +58,7 @@
         </div>
       </div>
     </nav>
-
+<!-- modal html and the top part of the homepage -->
     <section class="section" id="hero" >
       <div class="container">
         <div class="columns">
@@ -100,6 +78,7 @@
                 If someone were to ask you to describe a bird, you probably would say it is a feathered creature that flies and lays eggs. These three characteristics do describe most birds, but the only characteristic that belongs exclusively to birds is the presence of feathers. Just as all mammals have hair, all birds have feathers. <strong class="has-text-white">Let's discover other bird differences by checking out the bird repository!</strong>
                 
               </h3>
+              <!-- search bar HTML -->
               <div class="field has-addons">
                 <div class="control" id="userForm">
                   <input class="input" type="text" placeholder="Search for a bird!" id="birdSearch"/>
@@ -119,37 +98,7 @@
         </div>
       </div>
     </section>
-
-
-    <!-- <section class="section is-small">
-      <div id= "user-form" class="field has-addons"> -->
-        
-        <!-- <div  class="control">
-          <input id="cnt-name" class="input" type="text" placeholder="Find a repository" /> -->
-          
-    <!-- <section class="columns is-small is-centered"> -->
-    <!--      -->
-   <!--  -->
-      <!-- <div class="field has-addons"> -->
-        <!-- <div class="control" id="userForm"> -->
-          <!-- <input class="input" type="text" placeholder="Find a repository" id="birdSearch"/> -->
-        <!-- </div> -->
-        <!-- </div> -->
-    <!--          -->
-        <!-- <div class="control"> -->
-          <!-- <a class="button is-info" id="searchBtn" > Search </a> -->
-        <!-- </div> -->
-        <!-- </div> -->
-    <!-- </section>      JUST ADDED -->
-      <!-- </div>  JUST ADDED  -->
-    <!-- </section> -->
-
-    <!-- POPULAR SEARCHES SECTION -->
-    <!-- <section class="section" id="popular-searches">
-      <div class="container">
-        
-         
-            <section class="section is-small"> -->
+    <!-- Carousel section and HTML that makes it work -->
               <h1 class="popSearch">Popular Searches</h1>
               <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
                 <ul class="slider-container py-4">
@@ -238,73 +187,21 @@
                     <button aria-label="Go to slide" class="active"></button>
                     <button aria-label="Go to slide"></button>
                 </div>
-            </div>
-                
-
-
-
-
-
-              
-              
-<!-- 
-              <section class="section is-small level is-justify-content-space-evenly has-text-centered">
-                <figure>
-                  <a id="parrotButton">
-                  <img
-                    class="is-rounded mainPics"
-                    src="https://images.pexels.com/photos/1599533/pexels-photo-1599533.jpeg"
-                    
-
-                  /><h2 class="popStyle">Grey Parrot</h2></a>
-
-                </figure>
-                <figure>
-                  <a id="baldEagleButton">
-                    <img
-                      class="is-rounded mainPics"
-                      src="https://upload.wikimedia.org/wikipedia/commons/1/1a/About_to_Launch_%2826075320352%29.jpg"
-
-                    /><h2 class="popStyle">Bald Eagle</h2></a>
-
-                </figure>
-                <figure>
-                  <a id="blueJayButton">
-                    <img
-                      class="is-rounded mainPics"
-                      src="https://nas-national-prod.s3.amazonaws.com/styles/api_hero_bird_with_crop_1920_1200/public/birds/hero_image/sfw_fixed_01-29-2011-223.jpg?tok=1671176071"
-                    /><h2 class="popStyle">Blue Jay</h2></a>
-
-                </figure>
-                <figure>
-                  <a id="andeanCondorButton">
-                    <img
-                      class="is-rounded mainPics"
-                      src="https://i.guim.co.uk/img/media/6b021b9f22ab0507dfcbc8617d39cad72287a712/0_70_5000_3000/master/5000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=18d8320c286d5c5c14d2027393ef123a"
-                    /><h2 class="popStyle">Andean Condor</h2></a>
-
-                </figure>
-              </section>
-            </section>
-           -->
-        
-      
+            </div>  
     </div>
-    
-
- 
-
     <section class="section is-medium" id="about-contact" >
 
         <div class="columns">
             <div class="column aboutSection">
+              <!-- About this Project section -->
                 <h2 class="title has-text-white aboutProject">About This Project</h2>
                 <h3 class="subtitle has-text-white">
                   UT Austin Project 1 is a Bird facts and sounds repository finder. A user can look up a bird by name and then have facts and a recorded sound of that specific bird. 
                   We used (2) web API's to create this and Bulma CSS to create this repository site. 
                 </h3>
             </div>
-            <div class="column teamRight">         
+            <div class="column teamRight">       
+                <!-- Meet the team section -->
       <h2 class="title has-text-white">Meet The Team</h2>
       <h3 class="subtitle has-text-white">
         <ul>
@@ -318,10 +215,7 @@
     </div>
     </section>
   </div>
- 
-    
-    
-    
+  <!-- Footer section letting uses know we used Bulma and the two APIS -->
     <footer class="footer">
         <div class="content has-text-centered">
           <p>
