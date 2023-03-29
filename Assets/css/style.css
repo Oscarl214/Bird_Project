@@ -1,15 +1,7 @@
 .background {
-  /* background-image: linear-gradient( */
-    /* to right top, */
-    /* #bdd44b, */
-    /* #a9da3e, */
-    /* #338b01, */
-    /* #266602, */
-    /* #163d00); */
-    
-    /* background-image: url(/Assets/img/background_2.jpg); */
     background-color: #ffffff;
 }
+/* hero tag is the jungle background */
 #hero{
 background: url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
 min-height: 600px;
@@ -24,7 +16,7 @@ height: 600px;
 background-position-x: center;
 background-size: cover;
 }
-
+/* mainPics structures the size for the images on the carousel */
 .mainPics {
   min-height: 256px;
   min-width: 256px;

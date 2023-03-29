@@ -1,3 +1,5 @@
+// Variables for pulling API data 
+
 let englishName = $("#englishName");
 let scienceName = $("#scienceName");
 let countryRec = $("#countryRec");
@@ -5,6 +7,8 @@ let cityRec = $("#cityRec");
 let downlink = $("#downBtn");
 let imgHolder = $("#fetchedPhoto");
 let imgPlace = $("#fetchedPhoto2");
+
+// Function that populates API data to second page
 $(document).ready(function () {
   // Retrieved stored data from local storage
   let birdData = JSON.parse(localStorage.getItem("birdData"));
@@ -32,6 +36,4 @@ $(document).ready(function () {
     });
 });
 
-//TODO
 
-//1.
